@@ -32,8 +32,8 @@ export class ProductsController {
     }
 
     @Get(":id")
-    getOne(@Param("id") params): Promise<Product> {
-        return this.productService.getById(params.id);
+    getOne(@Param("id") id): Promise<Product> {
+        return this.productService.getById(id);
     }
 
     @Post()
