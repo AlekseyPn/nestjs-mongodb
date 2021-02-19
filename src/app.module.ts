@@ -5,7 +5,7 @@ import { AppService } from './app.service';
 import { ProductsModule } from './products/products.module';
 
 @Module({
-  imports: [ProductsModule, MongooseModule.forRoot(`mongodb+srv://alex:1234@cluster0.jkbxe.mongodb.net/products?retryWrites=true&w=majority`)],
+  imports: [ProductsModule],
   controllers: [AppController],
   providers: [AppService],
 })
